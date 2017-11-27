@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>FII Invaders</title>
+    <link rel="stylesheet" href="css/scholarly.min.css">
+    <script src="js/scholarly.min.js"></script>
+</head>
+
+<body prefix="schema: http://schema.org">
+    <header>
+        <div class="banner">
+            <img src="scholarly-html.svg" width="227" height="50" alt="Scholarly HTML logo">
+            <div class="status">In Progress</div>
+        </div>
+        <h1>FII Invaders</h1>
+    </header>
+    <div role="contentinfo">
+        <dl>
+            <dt>Autori</dt>
+            <dd>
+                Prodan Marius Georgian &amp; Chiriac Dorin Virgiliu
+            </dd>
+
+        </dl>
+    </div>
+    <section typeof="sa:Abstract" id="abstract" role="doc-abstract">
+        <h2>Abstract</h2>
+        <p>
+            Se doreşte dezvoltarea la nivel de browser Web a jocului clasic <a href="https://en.wikipedia.org/wiki/Space_Invaders">Space Invaders</a> plasat însă în contextul Facultăţii de Informatică. Interacţiunea cu utilizator va adopta şi folosirea
+            unui dispozitiv fizic – de exemplu, <a href="https://profs.info.uaic.ro/~vcosmin/dsfum">Arduino</a>. Scorul şi clasamentul curent vor putea fi salvate local sau partajate pe o reţea socială. Resurse de interes: <a href="https://github.com/bebraw/jswiki/wiki/Game-Engines">Game Engines</a>.
+            Bonus: realizarea unei variante 3D a interfeţei.
+        </p>
+    </section>
+    <section id="Introducere" role="doc-introduction">
+        <h2>Introducere</h2>
+        <p>
+            Conform Wikipedia Space Invaders,lansat in anul 1978, a inceput ca un joc 2D fixed shooter in care jucatorul controla tunul laser miscandu-l orizontal tragand catre "extraterestri" cu raze laser . Scopul este sa distrugem 5 randuri a cate 11 extraterestri
+            fiecare(numarul de extraterestrii/rand poate varia) rand deplasandu-se orizontal pe toata latimea monitorului, simultan(dar mai lent) indreptandu-se pe verticala catre tun.
+        </p>
+        <p>
+            Cu cat erau mai multi extraterestri distrusi cu atat viteza lor de deplasare catre tun se marea,deci eliminand un rand de extraterestri va aduce un altul mai dificil(se poate continua fara sfarsit). Unele tipuri de extraterestri pot riposta tragand la
+            randul lor raze laser catre tun. Daca un extraterestru ajunge in dreptul tunul jocul ia sfarsit deoarece "invazia extraterestra"a avut succes.
+        </p>
+
+    </section>
+    <section id="Descrierea ideilor">
+        <h2>Idei</h2>
+        <ol>
+            <li>
+                <h4>2D</h4>
+                <p>
+                    Prima idee este proiectarea jocului initial Space Invaders in formatul initial cu regulile prezentate mai sus (cele generice) cu intefata arduino/android pentru controlul tunului (stanga/dreapta/*trage raze laser)
+                </p>
+                <figure typeof="sa:Image">
+                    <img src="2D.jpg" width="880" height="655">
+                    <figcaption>
+                        Plan/Schita pentru ideea privind jocul 2D
+                    </figcaption>
+                </figure>
+                <figure typeof="sa:Image">
+                    <img src="general.jpg">
+                    <figcaption>
+                        Modelele pentru elementele din jocul initial(2D)
+                    </figcaption>
+                </figure>
+                <figure typeof="sa:Image">
+                    <center><img src="enemy_model.jpg"></center>
+                    <figcaption>
+                        Model pentru un tip de inamici
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <h4>3D</h4>
+                <p>
+                    A doua idee este proiectarea jocului Space Invaders in format 3D cu aceleasi reguli,insa cu posibilitatea de a schimba pespectiva pentru a putea observa geometriile "extraterestrilor","tunului/naveta","proiectilele" eventual ceva background interactiv
+                    plus controlul tunului printr-o interfata arduino/android cu utilizatorul.
+                </p>
+                <figure typeof="sa:Image">
+                    <img src="3D.jpg" width="960" height="655">
+                    <figcaption>
+                        Plan/Schita pentru ideea privind jocul 3D
+                    </figcaption>
+                </figure>
+                <figure typeof="sa:Image">
+                    <center><img src="enemy_model3D.jpg"></center>
+                    <figcaption>
+                        Model inamic 3D
+                    </figcaption>
+                </figure>
+            </li>
+        </ol>
+    </section>
+    <section id="Interactiunea cu utilizatorul">
+        <h2>Interactiunea cu utilizatorul</h2>
+        <p>
+
+        </p>
+    </section>
+
+</body>
+
+</html>
